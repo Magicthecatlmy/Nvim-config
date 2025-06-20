@@ -4,7 +4,7 @@ return {
     lazy = false,
     opts = {
 
-    },
+   },
     keys = {
     {"<leader>es", function() require("snacks").explorer() end, desc = "Open Snacks Explorer"},
     {"<leader>er", function() require("snacks").rename.rename_file() end, desc = "Rename Buffer"},

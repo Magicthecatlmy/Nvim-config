@@ -4,7 +4,6 @@ return {
     dependencies = {
         "hrsh7th/cmp-nvim-lsp",
         "folke/lazydev.nvim",
-        -- "saghen/blink.cmp",
         { "antosha417/nvim-lsp-file-operations", config = true },
     },
     config = function()
@@ -22,7 +21,7 @@ return {
                 vim.keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts) -- show definition, references
 
                 opts.desc = "Go to declaration"
-                vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts) -- go to declaration
+               vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts) -- go to declaration
 
                 opts.desc = "Show LSP definitions"
                 vim.keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts) -- show lsp definitions
