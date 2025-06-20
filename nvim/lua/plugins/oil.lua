@@ -7,7 +7,6 @@ return {
 	config = function()
 		require("oil").setup({
   --          default_file_explorer = true, -- start up nvim with oil instead of netrw
-			columns = { },
             delete_to_trash = true,
 			view_options = {
 				show_hidden = true,
